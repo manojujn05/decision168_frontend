@@ -9,15 +9,16 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+  <BrowserRouter>
       <Routes>
-        <Route path="/" index element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/#/dashboard" element={<Dashboard />} />
+        <Route path="/#/register" element={<Register />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App
