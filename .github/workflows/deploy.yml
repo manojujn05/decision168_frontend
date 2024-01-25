@@ -32,4 +32,6 @@ jobs:
         aws-region: 'us-east-1'
 
     - name: Deploy to S3
-      run: aws s3 sync ./build/ s3://my-reactjs-app/ --delete
+      run: aws s3 sync ./dist/ s3://my-reactjs-app/ --delete
+
+      
